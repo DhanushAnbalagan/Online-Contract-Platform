@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slideshow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+
+            margin: 0;
+
+        }
+
+        #logo img {
+            height: 53px;
+            width: 93px;
+
+        }
+
+        #navbar {
+            display: flex;
+            background-color: #ffffff6e;
+            height: 50px;
+            width: 1347px;
+        }
+
+        #navbar ul {
+            display: flex;
+            margin-left: -4px;
+            margin-top: 4px;
+        }
+
+
+        #navbar ul li {
+            margin-left: 10px;
+            list-style: none;
+            font-size: 1.2rem;
+        }
+
+        #navbar ul li a {
+            color: black;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'Saira Condensed', sans-serif !important;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        #navbar ul li a:hover {
+
+            color: black;
+            background-color: white;
+        }
+
+        .img1 {
+
+            background-image: url('Imgs/bgi.jpeg');
+            height: 700px;
+
+        }
+
+        .img1 {
+            position: relative;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
+
+        }
+
+        .sec1 {
+
+            height: 113px;
+            width: 100%;
+            border: 2px solid red;
+
+
+        }
+
+
+
+
+
+        .s1 {
+            display: flex;
+            flex-direction: column;
+            height: 304px;
+            width: 384px;
+            border: 2px solid red;
+            margin-top: 26px;
+            margin-left: 48px;
+            border-radius: 21px;
+
+
+        }
+
+
+
+        .center {
+            margin-top: 167px;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Baloo Bhai 2', cursive;
+            margin-left: 64px;
+            color: #6c3939;
+        }
+
+        .disp span {
+            background-color: #ffffff63;
+            font-size: 32px;
+            margin-top: 2px;
+
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .div2 {
+            background-color: #ffffff63;
+            font-size: 32px;
+            margin-top: -28px;
+
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .span1 {
+            margin-left: 73px;
+        }
+
+        .disp div {
+            margin-left: 12px;
+        }
+
+        .txt1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .border1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .border2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .border2 div {
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+
+        .border2 p {
+            color: rgb(0, 0, 0);
+            font-size: 26px;
+            font-family: 'Baloo Bhai 2', cursive;
+            margin-top: 1px;
+            margin-left: 44px;
+        }
+
+        .img2 {
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .img2 {
+
+            display: flex;
+            background-image: url('Imgs/micro3.jpg');
+            height: 100%;
+            width: 100%;
+        }
+
+        .box {
+            display: flex;
+            margin-top: 30px;
+
+            height: 129px;
+            width: 291px;
+            margin-left: 118px;
+            border-radius: 20px;
+            box-shadow: 1px 1px black;
+            flex-direction: column;
+            background-color: white;
+        }
+
+
+        .txt2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+
+        }
+
+        .box:hover {
+            position: relative;
+            box-shadow: 3px 3px black;
+            height: 140px;
+            width: 300px;
+
+        }
+
+
+
+        .megabox {
+            background: url('Imgs/org1.jpg');
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 330px;
+        }
+
+
+        .mega1 {
+            display: flex;
+            margin-top: 1px;
+        }
+
+        .mega1 img {
+            height: 144px;
+            width: 166px;
+
+            margin-left: 49px;
+            box-shadow: 1px 1px black;
+            margin-top: 56px;
+            border-radius: 17px;
+            transition-property: all;
+            transition-duration: 0.5s;
+
+        }
+
+        .mega1 img:hover {
+            height: 150px;
+            width: 170px;
+        }
+
+        .mega1 span {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name {
+            margin-left: 96px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .rate {
+            margin-left: 96px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        /*Microgreen section*/
+        .sec2 {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(185, 218, 187);
+        }
+
+        .minisec2 {
+            display: flex;
+
+        }
+
+        .micro {
+            height: 227px;
+            width: 200px;
+            margin-left: 107px;
+            margin-top: 29px;
+            border-radius: 12px;
+            transition-property: all;
+            transition-duration: 0.5s;
+
+        }
+
+        .micro img {
+            height: 230px;
+            width: 200px;
+            border-radius: 12px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .microtxt {
+            font-weight: bold;
+            margin-top: -42px;
+            margin-left: 65px;
+            font-size: 21px;
+            position: relative;
+            z-index: 2;
+            background: white;
+        }
+
+        #text1 {
+            margin-left: 57px;
+            margin-top: -39px;
+        }
+
+        #text2 {
+            margin-left: 76px;
+            margin-top: -39px;
+        }
+
+        #micro3 {
+            height: 200px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        #text3 {
+            margin-top: -8px;
+            margin-left: 0px;
+            padding: 3px;
+            padding-left: 80px;
+            width: 58%;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        #micro4 {
+            height: 185px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        #text4 {
+            margin-top: -5px;
+            margin-left: 0px;
+            padding: 9px;
+            padding-left: 63px;
+            width: 64%;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+
+        }
+
+        #micro5 {
+            height: 185px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        #text5 {
+            margin-top: -4px;
+            margin-left: 0px;
+            padding: 9px;
+            padding-left: 64px;
+            width: 63%;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        #micro6 {
+            height: 180px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        #text6 {
+            margin-top: -4px;
+            margin-left: 0px;
+            padding: 11px;
+            padding-left: 70px;
+            width: 59%;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        #micro7 {
+            height: 170px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        #text7 {
+            margin-top: -4px;
+            margin-left: 0px;
+            padding: 16px;
+            padding-left: 70px;
+            width: 57%;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        #micro8 {
+            height: 170px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        #text8 {
+            margin-top: -4px;
+            margin-left: 1px;
+            padding: 16px;
+            padding-left: 58px;
+            width: 62%;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        #para1 {
+            display: none;
+        }
+
+        .micro:hover {
+            height: 228px;
+
+            cursor: pointer;
+            box-shadow: 2px 4px black;
+            margin-left: 104px;
+
+        }
+
+        footer {
+            margin-top: 1px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img1">
+        <div class="txt1">
+            <span class="border1">
+                <nav id="navbar">
+                    <div id="logo">
+                        <img src="Imgs/ecofarm.png" alt="FreshBits">
+                    </div>
+                    <ul>
+                        <li class="item"><a href="#home">Home</a></li>
+                        <li class="item"><a href="#services-container">Services</a></li>
+                        <li class="item"><a href="#">Our Clients</a></li>
+                        <li class="item"><a href="ContactUs.html">Contact US</a></li>
+                    </ul>
+                </nav>
+                <span class="center">Freshness At Your DoorStep</span>
+                <p class="disp"><span class="span1">We provide freshly plucked ,pesticide free vegetables and
+                        Microgreens</span>
+
+                <div class="div2">within a day!!</div>
+            </span>
+        </div>
+    </div>
+
+    <!-- Big contianer with all the images -->
+    <div class="megabox">
+        <div class="bigc">
+            <div class="myimgs fade">
+                <div class="numbertxt">1/3</div>
+                <div class="mega1">
+                    <span><img src="Imgs/tomato.webp" alt="tomato">
+                        <div class="name">Tomato</div>
+                        <div class="rate">25Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/Brinjal.png" alt="">
+                        <div class="name">Brinjal</div>
+                        <div class="rate">40Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/okra.jpg" alt="">
+                        <div class="name">Lady Finger</div>
+                        <div class="rate">100Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/potato.jpg" alt="">
+                        <div class="name">Potato</div>
+                        <div class="rate">11Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/Onions.webp" alt="">
+                        <div class="name">onions</div>
+                        <div class="rate">45Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/lettuce.jpg" alt="">
+                        <div class="name">Lettuce</div>
+                        <div class="rate">200Rs/Kg</div>
+                    </span>
+                </div>
+                <div class="txt">Vegetables</div>
+            </div>
+            <div class="myimgs fade">
+                <div class="numbertxt">2/3</div>
+                <div class="mega1">
+                    <span><img src="Imgs/coriander.jpg" alt="tomato">
+                        <div class="name">Coriander</div>
+                        <div class="rate">90Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/basil.jpg" alt="">
+                        <div class="name">Basill</div>
+                        <div class="rate">380Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/lemongrass.png" alt="">
+                        <div class="name">Lemon grass</div>
+                        <div class="rate">185Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/parsly.jpg" alt="">
+                        <div class="name">Parsly</div>
+                        <div class="rate">800Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/Rosemary.jpg" alt="">
+                        <div class="name">Rosemary</div>
+                        <div class="rate">200Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/thyme.jpg" alt="">
+                        <div class="name">Thyme</div>
+                        <div class="rate">780Rs/Kg</div>
+                    </span>
+                </div>
+                <div class="txt">Herbs</div>
+            </div>
+            <div class="myimgs fade">
+                <div class="numbertxt">3/3</div>
+                <div class="mega1">
+                    <span><img src="Imgs/Kbs.jpg" alt="tomato">
+                        <div class="name">KidneyBeans</div>
+                        <div class="rate">40Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/Chickpeas.jpg" alt="">
+                        <div class="name">Chickpeas</div>
+                        <div class="rate">75Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/mung beans.jpg" alt="">
+                        <div class="name">Mung-Beans</div>
+                        <div class="rate">90Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/Soy.jpg" alt="">
+                        <div class="name">Soybeans</div>
+                        <div class="rate">40Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/Peas.jpeg" alt="">
+                        <div class="name">Peas</div>
+                        <div class="rate">35Rs/Kg</div>
+                    </span>
+                    <span><img src="Imgs/peanuts.jpg" alt="">
+                        <div class="name">Peanuts</div>
+                        <div class="rate">180Rs/Kg</div>
+                </div>
+                <div class="txt">Legumes</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a href="" class="prev" onclick="plusSlides(-1)">&#10094; </a>
+            <a href="" class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The Dots/cricles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div class="img2">
+        <div class="txt2">
+            <span class="border2">
+                <div> Microgreens</div>
+                <p>Microgreens are seedling of vegetables and herbs which are packed with various nutrients and are
+                    super healthy</p>
+            </span>
+        </div>
+    </div>
+    <section class="sec2">
+        <div class="minisec2">
+            <div class="micro">
+                <img src='Imgs/Radmicro.jpg' alt='' id="micro1">
+                <div class="microtxt" id="text1">Raddish </div>
+                <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quasi hic officiis.
+                </p>
+
+
+            </div>
+            <div class="micro"><img src='Imgs/basilmicro.jpg' alt='' id="micro2">
+                <div class="microtxt" id="text2"><span>Basil</span></div>
+            </div>
+            <div class="micro"><img src='Imgs/beetsmicro.jpg' alt='' id="micro3">
+                <div class="microtxt" id="text3">Beet</div>
+            </div>
+            <div class="micro"><img src='Imgs/cilantromicro.jpg' alt='' id="micro4">
+                <div class="microtxt" id="text4">Cilantro</div>
+            </div>
+        </div>
+        <div class="minisec2">
+            <div class="micro"><img src='Imgs/mustmicro1.jpg' alt='' id="micro5">
+                <div class="microtxt" id="text5">Mustard</div>
+            </div>
+            <div class="micro"><img src='Imgs/celerymicro.jpg' alt='' id="micro6">
+                <div class="microtxt" id="text6">Celery</div>
+            </div>
+            <div class="micro"><img src='Imgs/kalemicro.jpg' alt='' id="micro7">
+                <div class="microtxt" id="text7">Kale</div>
+            </div>
+            <div class="micro"><img src='Imgs/cabbmicro.jpg' alt='' id="micro8">
+                <div class="microtxt" id="text8">Cabbage</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright &copy; www.EcoFarm.com All rights reserved
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);//Matlab showSlides function mein slideIndex ki value daal do 
+
+        //Next/previous controls
+        //Creating a funciton that takes n as a input
+        function plusSlides(n) {
+            showSlides(slideIndex += n); //Iska matlab slideindex ki final value slideIndex+1 ho jaaye gi
+        }
+        //Thumbnail Image Controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName('myimgs');
+            var dots = document.getElementsByClassName('dots');
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += "active";
+        }
+
+    </script>
+</body>
+
+</html>

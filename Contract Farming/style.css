@@ -1,0 +1,321 @@
+/*CSS Reset*/
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*CSS Variables*/
+:root{
+  --navbar-height:59px;  
+}
+/* #animation{
+    color: orange;
+    border: 1px solid brown;
+    display: block;
+    margin: 0px 488px;
+    width: 110px;
+    z-index: 2;
+    position: fixed;
+    height: 43px;
+    box-shadow: inset 76px 0px 24px -90px #ccccdd;
+    animation-name: first1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes first1 {
+    0% {
+        box-shadow: inset 76px 0px 24px -90px #cccc;
+    }
+
+    5% {
+        box-shadow: inset 76px 0px 24px -84px #cccc;
+    }
+
+    10% {
+        box-shadow: inset 76px 0px 24px -78px #cccc;
+    }
+
+    15% {
+        box-shadow: inset 76px 0px 24px -72px #cccc;
+    }
+
+    20% {
+        box-shadow: inset 76px 0px 24px -66px #cccc;
+        
+    }
+
+    25% {
+        box-shadow: inset 76px 0px 24px -60px #cccc;
+    }
+
+    30% {
+        box-shadow: inset 76px 0px 24px -54px #ccccdd;
+    }
+
+    35% {
+        box-shadow: inset 76px 0px 24px -48px #ccccdd;
+    }
+
+    40% {
+        box-shadow: inset 76px 0px 24px -42px #ccccdd;
+    }
+
+    45% {
+        box-shadow: inset 76px 0px 24px -36px #ccccdd;
+    }
+
+    50% {
+        box-shadow: inset 76px 0px 24px -30px #ccccdd;
+    }
+
+    55% {
+        box-shadow: inset 76px 0px 24px -24px #ccccdd;
+    }
+
+    60% {
+        box-shadow: inset 76px 0px 24px -18px #ccccdd;
+    }
+
+    65% {
+        
+        box-shadow: inset 76px 0px 24px -12px #ccccdd;
+    }
+
+    70% {
+        box-shadow: inset 76px 0px 24px -6px #ccccdd;
+    }
+
+    75% {
+        box-shadow: inset 76px 0px 24px 0px #ccccdd;
+    }
+
+    80% {
+        box-shadow: inset 76px 0px 24px 6px #ccccdd;
+    }
+
+    85% {
+        box-shadow: inset 76px 0px 24px 12px #ccccdd;
+    }
+
+    90% {
+        box-shadow: inset 76px 0px 24px 18px #ccccdd;
+    }
+
+    95% {
+        
+        box-shadow: inset 76px 0px 24px 24px #ccccdd;
+    }
+
+    100% {
+        box-shadow: inset 76px 0px 24px 30px #ccccdd;
+    }
+}
+#new1{
+    position: fixed;
+    z-index: 5;
+    margin-left: 346px; ;} */
+
+
+#navbar{
+    
+    display: flex;
+    align-items: center;/*Aligns Along the X axis(In this case center of the X axis)*/
+    /* justify-content:center; /*Aligns along the Y axis ( In this case center of the Y axis) */
+    position: sticky;
+    top: 0px;
+}
+/*navigation Bar: Logo and Image*/
+#logo{
+    margin: 23px 23px;
+    
+}
+#logo img{
+    margin: 6px 2px;
+    height: 53px; 
+    
+
+
+} 
+
+/* navigation bar:List styling*/
+#navbar{
+    /* position: relative; */
+    height: 47px;
+} 
+#navbar ul{
+    display: flex;
+    font-family:  'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(26 26 26);
+    position: absolute;  /*Remember this trick*/
+    height:100% ;
+    width: 100%;
+    z-index: -1; 
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    /* display: block;Padding Deni Thi Issi Liye */
+    color: white;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    /*Humne Li ko seedha padding nahi di because phir anchor tag mein jo elements hain unpar jab hum hover wallah effect lagate then some part of li containing a tag would have remained empty. *NOTE*For More Clarity watch project 2 from 15 minutes*/
+}
+#navbar ul li a:hover{
+    /* display: block;Padding Deni Thi Issi Liye */
+    color: black;
+    background-color: white;
+} 
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;/*3px from top,200px from left right */
+    justify-content: center; 
+    align-items: center; 
+    height: 500px;
+
+}
+#home::before{
+    content: "";
+    position: absolute;  /*Remember this trick*/
+    background: url(Imgs/banner.jpg) no-repeat center center/cover;
+    height:100% ;
+    width: 100%;
+    z-index: -1; 
+    opacity: 0.8;
+}
+
+
+#home h1{
+    text-align: center;
+    background-color:#fdfdfd4d;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    text-align: center;
+    font-size: 1.5rem;
+    /*background-color:#fdfdfd4d;*/
+    font-family: 'Bree Serif', serif;
+}
+/* SERVICES SECTION */
+#span1{
+    font-size: 11px;
+}
+#services{
+    margin: 16px;
+    display: flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding: 16px;
+    margin: 0px 5px;
+    border-radius: 23px;
+    background-color: #e5fbe7;
+    
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    transition:all 0.5s ease-in-out 0s ;
+    
+}
+#services .box img:hover{
+    height: 170px;
+    box-shadow: 2px 2px black;
+    /* margin: 122px; */
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif; 
+}
+
+#spad{
+    padding-top: 60px;
+}
+/*Partner Section*/
+#partners-section{
+    height: 344px;
+    position: relative;
+}
+#partners-section::before{
+    content: "";
+    position: absolute;
+    background: url(Imgs/banner4.jpg)no-repeat center center/cover;
+    width: 100%;
+    height:100%;
+    z-index: -1;/*Agar z index define nahi kiya then the image will be in the same plane as the elements of section partners and hence will come below the partners section.*NOTE* for more clarity comment Z-index */
+}
+#partners-section #partners .partners-item img:hover{
+    height: 120px; 
+    box-shadow: 2px 2px black;
+}   
+    
+
+#partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#partners img{
+    height: 115px;
+    margin-top: 17px;
+    margin: 44px 
+} 
+    
+.partners-item{
+    margin: 1px 2px;
+}
+.partners-item img{
+    transition: all 1s;
+}
+
+
+
+
+/*Utility Classes:-Nothing special just classes that we want to use multiple times*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 6px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    /* padding: 6px 20px; */
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 16px;
+    border-radius: 11px;
+    transition: all 1s;
+    height: 43px;
+    width: 121px;
+}
+.btn:hover{
+    height: 48px;
+    width: 130px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    /* padding-top: 55px; */
+}
+footer{
+    background: black;
+    color: white;
+}
